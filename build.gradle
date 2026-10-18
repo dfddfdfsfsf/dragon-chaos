@@ -1,0 +1,36 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.gradle.userdev' version '7.0.192'
+}
+
+version = mod_version
+group = maven_group
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "net.neoforged:neoforge:${neo_version}"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+runs {
+    configureEach {
+        workingDirectory project.file('run')
+        modSource sourceSets.main
+        systemProperty 'forge.logging.console.level', 'debug'
+    }
+    client {
+        client()
+    }
+    server {
+        server()
+    }
+}

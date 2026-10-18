@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB", "DND", "DDD"],
+  "key": {
+    "B": { "item": "minecraft:blaze_powder" },
+    "D": { "item": "minecraft:dragon_breath" },
+    "N": { "item": "minecraft:nether_star" }
+  },
+  "result": {
+    "id": "eclipse_domain:eclipse_seal",
+    "count": 1
+  }
+}
