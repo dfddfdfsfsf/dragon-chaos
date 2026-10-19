@@ -1,6 +1,6 @@
-# Eclipse Domain
+# Eclipse Domain MOD (Testing repository)
 
-NeoForge 1.21.1 mod adding the craftable **Eclipse Seal** attack spell.
+NeoForge 1.21.1 mod adding the craftable **Eclipse Seal** attack spell. The entire domain VFX is highly inspired in Bloxfruit Roblox Game Transformed Dragon West "C" moveset
 
 ## Features
 
